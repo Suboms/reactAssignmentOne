@@ -7,7 +7,7 @@ const CheckLength = () => {
   const handleChange = (e) => {
     setLength(e.target.value.length);
   };
-  
+
   return (
     <>
       <InputField
@@ -16,9 +16,11 @@ const CheckLength = () => {
         label="Text Input"
         handleChange={handleChange}
       />
-      <h2>The length is {length}</h2>
-
-      <TextLength theLength={length}/>
+      
+      <div className="text-content">
+        <h2>The length is {length}</h2>
+        <TextLength theLength={length} />
+      </div>
     </>
   );
 };

@@ -5,7 +5,7 @@ const InputField = (props) => {
   return (
     <>
       <div className="input-container">
-        <label htmlFor={props.inputid}>{props.label}</label>
+        <label htmlFor={props.inputid} className="text-label">{props.label}</label>
         <input
           type="text"
           name={props.inputname}
